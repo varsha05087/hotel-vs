@@ -1,3 +1,4 @@
+import { MdBedroomParent, MdEventAvailable, MdBookOnline, MdConfirmationNumber, MdAttachMoney } from 'react-icons/md';
 import roomsData from '../data/roomsData';
 
 function Dashboard({ bookings }) {
@@ -34,22 +35,27 @@ function Dashboard({ bookings }) {
     <div>
       <div className="cards">
         <div className="card">
+          <MdBedroomParent className="card-icon" />
           <h3>Total Rooms</h3>
           <p>{totalRooms}</p>
         </div>
         <div className="card">
+          <MdEventAvailable className="card-icon" />
           <h3>Available</h3>
           <p>{totalAvailable}</p>
         </div>
         <div className="card">
+          <MdBookOnline className="card-icon" />
           <h3>Booked</h3>
           <p>{totalBooked}</p>
         </div>
         <div className="card">
+          <MdConfirmationNumber className="card-icon" />
           <h3>Total Bookings</h3>
           <p>{totalBookings}</p>
         </div>
         <div className="card">
+          <MdAttachMoney className="card-icon" />
           <h3>Total Revenue</h3>
           <p>₹{totalRevenue}</p>
         </div>

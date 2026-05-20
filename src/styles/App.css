@@ -928,6 +928,22 @@ tbody td {
 .main {
   transition: all 0.3s ease;
 }
+/* NAV ICONS */
+.nav-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* CARD ICONS */
+.card-icon {
+  font-size: 40px;
+  background: linear-gradient(135deg, #c62828, #1565c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
 @media (max-width: 768px) {
    .cards {
   grid-template-columns: repeat(2, 1fr);

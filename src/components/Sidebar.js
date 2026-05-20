@@ -1,49 +1,51 @@
+import { MdDashboard, MdBedroomParent, MdBookOnline, MdHistory, MdFavorite, MdStar, MdPayment } from 'react-icons/md';
+
 function Sidebar({ page, setPage, sidebarOpen }) {
   return (
     <div className={`sidebar ${sidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}>
-      <h2>🏨 Hotel VS</h2>
+      <h2>Hotel VS</h2>
       <ul>
         <li
           className={page === 'dashboard' ? 'active' : ''}
           onClick={() => setPage('dashboard')}
         >
-          📊 Dashboard
+          <MdDashboard className="nav-icon" /> Dashboard
         </li>
         <li
           className={page === 'rooms' ? 'active' : ''}
           onClick={() => setPage('rooms')}
         >
-          🛏️ Rooms
+          <MdBedroomParent className="nav-icon" /> Rooms
         </li>
         <li
           className={page === 'bookings' ? 'active' : ''}
           onClick={() => setPage('bookings')}
         >
-          📋 Bookings
+          <MdBookOnline className="nav-icon" /> Bookings
         </li>
         <li
           className={page === 'history' ? 'active' : ''}
           onClick={() => setPage('history')}
         >
-          📜 Booking History
+          <MdHistory className="nav-icon" /> Booking History
         </li>
         <li
           className={page === 'wishlist' ? 'active' : ''}
           onClick={() => setPage('wishlist')}
         >
-          ❤️ Wishlist
+          <MdFavorite className="nav-icon" /> Wishlist
         </li>
         <li
           className={page === 'reviews' ? 'active' : ''}
           onClick={() => setPage('reviews')}
         >
-          ⭐ Reviews
+          <MdStar className="nav-icon" /> Reviews
         </li>
         <li
           className={page === 'billing' ? 'active' : ''}
           onClick={() => setPage('billing')}
         >
-          💰 Billing
+          <MdPayment className="nav-icon" /> Billing
         </li>
       </ul>
     </div>
